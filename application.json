@@ -5,7 +5,7 @@
 
   "artifactId" : "8a83d52555dd19900155ddff09c51c1a",
   "version" : "2.0.0",
-  "displayName" : "Sample App",
+  "displayName" : "Grenoble POC",
   "description" : "With JDK installation.",
   "resources" : [ {
     "id" : "8e1be349-f09c-2982-01fd-39aec635328d",
@@ -210,7 +210,7 @@
     "properties" : [ {
       "propertyKey" : "PASSWORD",
       "propertyValue" : {
-        "value" : "ENC(h50ZH0kzlZXdstaGseTYuQ==)",
+        "value" : "ENC(hbkER1Sntz06jCilqfGfrA==)",
         "type" : "string_encrypted"
       }
     }, {
@@ -678,7 +678,7 @@
     "capabilityChars" : [ ],
     "requirements" : [ ]
   } ],
-  "revision" : 23,
+  "revision" : 24,
   "properties" : [ ],
   "iconUrl" : "/csa/images/library/Thriving_economy_RGB_blue_NT.png",
   "tagIds" : [ ],
