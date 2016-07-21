@@ -682,27 +682,29 @@
       "description" : null
     },
     "capabilityChars" : [ ],
+
     "requirements" : [ ]
   }, {
     "id" : "4d504d46-b8cb-bcb6-6966-c7b4e523adc9",
     "name" : "Vcenter_Azure_AWS_Compute",
     "component" : {
       "@self" : "/csa/api/topology-model/component-type/909264ee-485f-481c-9733-487ee49d4640",
+
       "groupId" : "com.hp.csa.type.VMWARE_VCENTER",
       "artifactId" : "Vcenter_Azure_Compute_0d216e5ffdb04c6ba66b85f0d89a9487",
       "version" : "1.0"
     },
+
     "properties" : [ {
       "propertyKey" : "Azure-vmSize",
       "propertyValue" : {
-        "value" : null,
+        "value" : "Basic_A1",
         "type" : "string"
       }
     }, {
       "propertyKey" : "Azure-storageAccount",
-
       "propertyValue" : {
-        "value" : null,
+        "value" : "hpazure2208",
         "type" : "string"
       }
     }, {
@@ -728,119 +730,114 @@
     }, {
       "propertyKey" : "VC-vmTemplateReference",
       "propertyValue" : {
+
         "value" : "Red-Hat_Template",
         "type" : "string"
-      }
 
+      }
     }, {
+
       "propertyKey" : "AWS-username",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
-
       }
     }, {
-
       "propertyKey" : "password",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
       "propertyValue" : {
-
         "value" : "",
         "type" : "string"
       }
-    }, {
 
+    }, {
       "propertyKey" : "AWS-amiId",
       "propertyValue" : {
-        "value" : null,
+        "value" : "ami-e0c19f83",
         "type" : "string"
-
       }
     }, {
       "propertyKey" : "AWS-privateKey",
+
       "propertyValue" : {
         "value" : null,
         "type" : "string_encrypted"
       }
-
     }, {
       "propertyKey" : "Azure-dataDiskName",
       "propertyValue" : {
-
         "value" : null,
         "type" : "string"
-
       }
     }, {
       "propertyKey" : "Azure-vmAdminUserName",
       "propertyValue" : {
-        "value" : null,
+        "value" : "grenoble",
+
         "type" : "string"
       }
     }, {
       "propertyKey" : "VC-privateKey",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string_encrypted"
       }
     }, {
       "propertyKey" : "AWS-instanceName",
       "propertyValue" : {
-        "value" : null,
+        "value" : "Grenoble",
         "type" : "string"
       }
     }, {
       "propertyKey" : "VC-hostSystem",
       "propertyValue" : {
-
         "value" : null,
-        "type" : "string"
 
+        "type" : "string"
       }
+
     }, {
       "propertyKey" : "vmID",
-
       "propertyValue" : {
         "value" : null,
-
         "type" : "string"
       }
     }, {
       "propertyKey" : "VC-password",
       "propertyValue" : {
-        "value" : "ENC(mLvAh576jRT5KI3CtZUSgkweZIPeWuwB)",
+        "value" : "ENC(oEAaQCM234hB3//6+oQxxsOnywOU/xLR)",
         "type" : "string_encrypted"
       }
     }, {
-
       "propertyKey" : "VC-dataStore",
-
       "propertyValue" : {
         "value" : null,
-
         "type" : "string"
       }
     }, {
       "propertyKey" : "ipAddress",
       "propertyValue" : {
         "value" : null,
+
         "type" : "string"
       }
     }, {
       "propertyKey" : "Azure-sku",
       "propertyValue" : {
-        "value" : null,
+        "value" : "14.04.4-LTS",
         "type" : "string"
       }
     }, {
       "propertyKey" : "_modifiable_properties",
       "propertyValue" : {
-        "value" : "VC-password",
+        "value" : "AWS-amiId, AWS-availabilityZone, AWS-instanceName, AWS-instanceType, Azure-location, Azure-offer, Azure-osPlatform, Azure-publisher, Azure-resourceGroupName, Azure-sku, Azure-storageAccount, Azure-subnetName, Azure-virtualNetworkName, Azure-vmAdminPassword, Azure-vmAdminUserName, Azure-vmName, Azure-vmSize, Provider, VC-cpuCount, VC-customizationSpec, VC-memorySize, VC-password, VC-username, VC-vmNamePrefix, VC-vmTemplateReference",
         "type" : "string"
       }
 
@@ -867,31 +864,30 @@
       }
     }, {
       "propertyKey" : "VC-vmNamePrefix",
-
       "propertyValue" : {
         "value" : "sumit",
+
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "AWS-password",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
-
       }
-    }, {
 
+    }, {
       "propertyKey" : "AWS-proxyUsername",
+
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
-
     }, {
       "propertyKey" : "VC-customizationSpec",
       "propertyValue" : {
         "value" : "vm_spec49",
-
         "type" : "string"
       }
     }, {
@@ -900,18 +896,19 @@
         "value" : "512",
         "type" : "number"
       }
-    }, {
 
+    }, {
       "propertyKey" : "AWS-availabilityZone",
       "propertyValue" : {
-        "value" : null,
+
+        "value" : "ap-southeast-2a",
         "type" : "string"
       }
     }, {
 
       "propertyKey" : "Azure-location",
       "propertyValue" : {
-        "value" : null,
+        "value" : "East US",
         "type" : "string"
       }
     }, {
@@ -921,39 +918,37 @@
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "VC-username",
       "propertyValue" : {
-
         "value" : "root",
         "type" : "string"
-
       }
     }, {
       "propertyKey" : "AWS-instanceType",
 
       "propertyValue" : {
-        "value" : null,
-
+        "value" : "t2.micro",
         "type" : "string"
       }
     }, {
       "propertyKey" : "Azure-vmAdminPassword",
       "propertyValue" : {
-        "value" : null,
+        "value" : "admin@123",
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "Azure-publisher",
       "propertyValue" : {
-
-        "value" : null,
+        "value" : "Canonical",
         "type" : "string"
-
       }
+
     }, {
       "propertyKey" : "Azure-osPlatform",
       "propertyValue" : {
-        "value" : null,
+        "value" : "Linux",
         "type" : "string"
       }
     }, {
@@ -965,10 +960,8 @@
     }, {
       "propertyKey" : "Azure-resourceGroupName",
       "propertyValue" : {
-
-        "value" : null,
+        "value" : "Azure-ResourceGroup",
         "type" : "string"
-
       }
     }, {
       "propertyKey" : "Azure-availabilitySetName",
@@ -983,15 +976,18 @@
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "resourceGroupName",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "Azure-virtualNetworkName",
       "propertyValue" : {
-        "value" : null,
+        "value" : "hpazure_vlan",
         "type" : "string"
       }
     }, {
@@ -1005,30 +1001,33 @@
       "propertyValue" : {
         "value" : null,
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "Azure-vmName",
       "propertyValue" : {
-        "value" : null,
+        "value" : "grenoble",
+
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "VC-vmResourcePool",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "Azure-offer",
       "propertyValue" : {
-
-        "value" : null,
+        "value" : "UbuntuServer",
         "type" : "string"
       }
     }, {
       "propertyKey" : "Azure-subnetName",
       "propertyValue" : {
-        "value" : null,
+        "value" : "Subnet1",
         "type" : "string"
       }
     }, {
@@ -1062,7 +1061,7 @@
     "capabilityChars" : [ ],
     "requirements" : [ ]
   } ],
-  "revision" : 93,
+  "revision" : 94,
   "properties" : [ ],
   "iconUrl" : "/csa/images/library/Thriving_economy_RGB_blue_NT.png",
   "tagIds" : [ ],
