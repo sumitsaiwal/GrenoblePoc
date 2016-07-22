@@ -1,1071 +1,197 @@
 {
-  "@self" : "/csa/api/topology-model/topology/b3513b08-d331-4cd7-ac6d-e14a528ce1d1",
-  "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
-  "groupId" : "com.hp.csa",
+  "@type" : "urn:x-hp:2013:software:cloud:topology_model:topologys",
+  "@self" : "/csa/api/topology-model/topology",
+  "@actual-count" : 22,
 
-  "artifactId" : "8a83d52555dd19900155ddff09c51c1a",
-  "version" : "2.0.0",
-  "displayName" : "Grenoble POC",
-  "description" : "Grenoble POC deployment using new instance from vCenter/Azure/AWS.",
-  "resources" : [ {
-    "id" : "7cfc8313-0f75-99da-f9a4-41bfa615be72",
-
-    "name" : "Vcenter_Azure_AWS_Compute",
-    "component" : {
-      "@self" : "/csa/api/topology-model/component-type/909264ee-485f-481c-9733-487ee49d4640",
-      "groupId" : "com.hp.csa.type.VMWARE_VCENTER",
-      "artifactId" : "Vcenter_Azure_Compute_0d216e5ffdb04c6ba66b85f0d89a9487",
-
-      "version" : "1.0"
-    },
-    "properties" : [ {
-      "propertyKey" : "Azure-vmSize",
-      "propertyValue" : {
-        "value" : "Basic_A1",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Azure-storageAccount",
-
-      "propertyValue" : {
-        "value" : "hpazure2208",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-cpuCount",
-      "propertyValue" : {
-        "value" : "1",
-        "type" : "number"
-      }
-    }, {
-      "propertyKey" : "VC-LIFECYCLE_PHASE",
-      "propertyValue" : {
-        "value" : "deploying",
-        "type" : "string"
-
-      }
-    }, {
-      "propertyKey" : "VC-vmFolder",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-vmTemplateReference",
-      "propertyValue" : {
-        "value" : "Red-Hat_Template",
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AWS-username",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "password",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "_enable_modify_during_lifecycle_properties",
-      "propertyValue" : {
-        "value" : "",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AWS-amiId",
-      "propertyValue" : {
-
-        "value" : "ami-dc361ebf",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AWS-privateKey",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string_encrypted"
-
-      }
-    }, {
-      "propertyKey" : "Azure-dataDiskName",
-      "propertyValue" : {
-
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Azure-vmAdminUserName",
-      "propertyValue" : {
-
-        "value" : "grenoble",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-privateKey",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string_encrypted"
-
-      }
-    }, {
-
-      "propertyKey" : "AWS-instanceName",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-hostSystem",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-
-      "propertyKey" : "vmID",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-password",
-
-      "propertyValue" : {
-        "value" : "ENC(FPjPml67lNbUVVKMxtrniCdvv1RJ7dxX)",
-        "type" : "string_encrypted"
-      }
-    }, {
-      "propertyKey" : "VC-dataStore",
-
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "ipAddress",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "Azure-sku",
-      "propertyValue" : {
-        "value" : "14.04.4-LTS",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "_modifiable_properties",
-      "propertyValue" : {
-        "value" : "AWS-amiId, AWS-availabilityZone, AWS-instanceType, Azure-location, Azure-offer, Azure-osPlatform, Azure-publisher, Azure-resourceGroupName, Azure-sku, Azure-storageAccount, Azure-subnetName, Azure-virtualNetworkName, Azure-vmAdminPassword, Azure-vmAdminUserName, Azure-vmName, Azure-vmSize, Provider, VC-cpuCount, VC-customizationSpec, VC-memorySize, VC-password, VC-username, VC-vmNamePrefix, VC-vmTemplateReference",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AWS-proxyPassword",
-
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AWS-keyName",
-
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-datacenterName",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-vmNamePrefix",
-      "propertyValue" : {
-        "value" : "Grenoble",
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AWS-password",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AWS-proxyUsername",
-      "propertyValue" : {
-        "value" : null,
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-customizationSpec",
-      "propertyValue" : {
-        "value" : "spec49",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-memorySize",
-      "propertyValue" : {
-        "value" : "512",
-        "type" : "number"
-      }
-    }, {
-      "propertyKey" : "AWS-availabilityZone",
-      "propertyValue" : {
-        "value" : "us-west-2a",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Azure-location",
-      "propertyValue" : {
-        "value" : "East US",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AWS-subnetId",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-username",
-      "propertyValue" : {
-
-        "value" : "root",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AWS-instanceType",
-      "propertyValue" : {
-        "value" : "t2.micro",
-        "type" : "string"
-      }
-    }, {
-
-      "propertyKey" : "Azure-vmAdminPassword",
-      "propertyValue" : {
-        "value" : "password",
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "Azure-publisher",
-
-      "propertyValue" : {
-        "value" : "Canonical",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Azure-osPlatform",
-      "propertyValue" : {
-        "value" : "Linux",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "instanceId",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Azure-resourceGroupName",
-      "propertyValue" : {
-        "value" : "Azure-ResourceGroup",
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Azure-availabilitySetName",
-      "propertyValue" : {
-
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "vmName",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "resourceGroupName",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Azure-virtualNetworkName",
-      "propertyValue" : {
-        "value" : "hpazure_vlan",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Provider",
-      "propertyValue" : {
-        "value" : "AWS",
-
-        "type" : "string"
-
-      }
-    }, {
-      "propertyKey" : "Azure-networkSecurityGroupName",
-      "propertyValue" : {
-        "value" : null,
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Azure-vmName",
-      "propertyValue" : {
-        "value" : "grenoble",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-vmResourcePool",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Azure-offer",
-      "propertyValue" : {
-        "value" : "UbuntuServer",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "Azure-subnetName",
-      "propertyValue" : {
-        "value" : "Subnet1",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "VC-clusterName",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "username",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AWS-securityGroupIds",
-
-      "propertyValue" : {
-        "value" : null,
-
-        "type" : "string"
-      }
-    } ],
-    "outgoingRelations" : [ ],
-    "annotations" : {
-      "uniqueName" : "Vcenter_Azure_AW0001",
-      "displayName" : "7cfc8313-0f75-99da-f9a4-41bfa615be72",
-
-      "x" : "500",
-
-      "y" : "406",
-      "description" : null
-    },
-    "capabilityChars" : [ ],
-    "requirements" : [ ]
+  "@start-index" : 0,
+  "@total-count" : 22,
+  "members" : [ {
+    "@self" : "/csa/api/topology-model/topology/ec8e59de-e7b6-460a-b1ad-6945788c92c7",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45db1380006",
+    "version" : "15.12.0000",
+    "displayName" : "vCenter Simple Compute",
+    "designType" : "None"
   }, {
-    "id" : "da2051cc-1487-d50e-561f-bc561d2fef60",
 
-    "name" : "JDK Installation Grenoble",
-    "component" : {
+    "@self" : "/csa/api/topology-model/topology/05ffd4da-7ead-4a3f-b40b-b4aaa93ef922",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
 
-      "@self" : "/csa/api/topology-model/component-type/de509b69-485e-4945-9790-f74d679f5145",
-      "groupId" : "com.hp.csa.type",
-      "artifactId" : "JDKInstallationGrenoble_bde4644f0fa943c1be0b97ec9dc8f6c9",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45dc8860038",
+    "version" : "1.50.00",
+    "displayName" : "Scalable Tomcat stack Microservice",
+    "designType" : "Service"
 
-      "version" : "1.0"
-    },
-    "properties" : [ {
-      "propertyKey" : "configurationUrl",
-      "propertyValue" : {
-        "value" : "http://10.3.85.217:8081/nexus/content/repositories/AT2C/Apache/Tomcat_Server/Version/7.0.65/Linux/Scripts/AT2C_Cloudmap_install_jdk.sh",
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "sshPort",
-
-      "propertyValue" : {
-        "value" : "22",
-        "type" : "string"
-      }
-    }, {
-
-      "propertyKey" : "installPath",
-      "propertyValue" : {
-
-        "value" : "/opt",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "appProtocol",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "_modifiable_properties",
-      "propertyValue" : {
-        "value" : "",
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "appPort",
-      "propertyValue" : {
-
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "remoteFilePath",
-      "propertyValue" : {
-        "value" : "/tmp",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "hostname",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-
-      "propertyKey" : "password",
-
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "serviceCommand",
-      "propertyValue" : {
-        "value" : "sh AT2C_Cloudmap_install_jdk.sh",
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "_enable_modify_during_lifecycle_properties",
-      "propertyValue" : {
-        "value" : "",
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "port",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "response",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-
-      "propertyKey" : "artifactPassword",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "artifactUrl",
-      "propertyValue" : {
-        "value" : "http://10.3.85.217:8081/nexus/content/repositories/AT2C/Apache/Tomcat_Server/Version/7.0.65/Linux/Packages/jdk-7u79-linux-x64.tar.gz",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "privatekeyPath",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-
-      }
-    }, {
-      "propertyKey" : "artifactUsername",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "username",
-      "propertyValue" : {
-        "value" : null,
-
-        "type" : "string"
-      }
-    } ],
-    "outgoingRelations" : [ {
-      "relationType" : "association",
-      "id" : "673da794-95e2-1c21-7af2-de29eaf1b971",
-      "properties" : [ {
-        "propertyKey" : "_enable_modify_during_lifecycle_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-        }
-      }, {
-        "propertyKey" : "_modifiable_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-        }
-      }, {
-        "propertyKey" : "_relation_type",
-        "propertyValue" : {
-          "value" : {
-            "first" : "Association",
-            "second" : "ASSOCIATION"
-          },
-          "type" : "pair"
-        }
-
-      } ],
-      "relationDescriptorName" : "JDK_JDKInstallationGrenoble_bde4644f0fa943c1be0b97ec9dc8f6c9__VERSION__1^0__GROUPID__com^hp^csa^type",
-      "resourceReference" : {
-        "name" : "Vcenter_Azure_AWS_Compute"
-
-      }
-    } ],
-    "annotations" : {
-      "uniqueName" : "JDKInstallationG0001",
-      "displayName" : "da2051cc-1487-d50e-561f-bc561d2fef60",
-      "x" : "346",
-      "y" : "398",
-      "description" : null
-    },
-    "capabilityChars" : [ ],
-    "requirements" : [ ]
   }, {
-    "id" : "d8e31846-fab8-36b7-5914-4abc48c67150",
-    "name" : "Apache Tomcat Grenoble",
-    "component" : {
-      "@self" : "/csa/api/topology-model/component-type/e4bf4182-2f05-4fc6-b33f-4166f2c1c674",
-      "groupId" : "com.hp.csa.type",
-      "artifactId" : "ApacheTomcatGrenoble_7899f16128234232a8c74c2460004cbc",
-      "version" : "1.0"
-    },
-    "properties" : [ {
-      "propertyKey" : "configurationUrl",
-      "propertyValue" : {
-        "value" : "http://10.3.85.217:8081/nexus/content/repositories/AT2C/Apache/Tomcat_Server/Version/7.0.65/Linux/Scripts/AT2C_CLoudmap_Apache_Tomcat.sh",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "sshPort",
-      "propertyValue" : {
-        "value" : "22",
+    "@self" : "/csa/api/topology-model/topology/c498e34c-72e1-4c4e-9b33-d24051419fa1",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45dd6120057",
+    "version" : "1.50.00",
+    "displayName" : "MySQL Microservice",
 
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "installPath",
-      "propertyValue" : {
-        "value" : "/opt",
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "appProtocol",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-
-      }
-    }, {
-      "propertyKey" : "_modifiable_properties",
-
-      "propertyValue" : {
-        "value" : "",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "appPort",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "remoteFilePath",
-      "propertyValue" : {
-        "value" : "/tmp",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "hostname",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "password",
-
-      "propertyValue" : {
-        "value" : null,
-
-        "type" : "string"
-
-      }
-    }, {
-      "propertyKey" : "serviceCommand",
-      "propertyValue" : {
-        "value" : "sh AT2C_CLoudmap_Apache_Tomcat.sh",
-
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "_enable_modify_during_lifecycle_properties",
-      "propertyValue" : {
-        "value" : "",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "port",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-
-      "propertyKey" : "response",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "artifactPassword",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "artifactUrl",
-      "propertyValue" : {
-        "value" : "http://10.3.85.217:8081/nexus/content/repositories/AT2C/Apache/Tomcat_Server/Version/7.0.65/Linux/Packages/apache-tomcat-7.0.65.tar.gz",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "privatekeyPath",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "artifactUsername",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-
-      }
-    }, {
-      "propertyKey" : "username",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    } ],
-
-    "outgoingRelations" : [ {
-      "relationType" : "association",
-      "id" : "818a0fca-2c75-cd27-6056-c0cf45c5dc54",
-      "properties" : [ {
-        "propertyKey" : "_enable_modify_during_lifecycle_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-        }
-      }, {
-        "propertyKey" : "_modifiable_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-        }
-      }, {
-        "propertyKey" : "_relation_type",
-        "propertyValue" : {
-
-          "value" : {
-            "first" : "Association",
-            "second" : "ASSOCIATION"
-          },
-          "type" : "pair"
-        }
-      } ],
-      "relationDescriptorName" : "Java_ApacheTomcatGrenoble_7899f16128234232a8c74c2460004cbc__VERSION__1^0__GROUPID__com^hp^csa^type",
-      "resourceReference" : {
-        "name" : "JDK Installation Grenoble"
-      }
-
-    }, {
-      "relationType" : "association",
-      "id" : "adf03e69-c0f8-e679-a664-a70830afd8b7",
-      "properties" : [ {
-        "propertyKey" : "_enable_modify_during_lifecycle_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-        }
-
-      }, {
-        "propertyKey" : "_modifiable_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-        }
-      }, {
-        "propertyKey" : "_relation_type",
-        "propertyValue" : {
-          "value" : {
-            "first" : "Association",
-            "second" : "ASSOCIATION"
-          },
-          "type" : "pair"
-        }
-      } ],
-      "relationDescriptorName" : "Tomcat_ApacheTomcatGrenoble_7899f16128234232a8c74c2460004cbc__VERSION__1^0__GROUPID__com^hp^csa^type",
-      "resourceReference" : {
-        "name" : "Vcenter_Azure_AWS_Compute"
-      }
-    } ],
-    "annotations" : {
-      "uniqueName" : "ApacheTomcatGren0001",
-      "displayName" : "d8e31846-fab8-36b7-5914-4abc48c67150",
-
-      "x" : "445",
-      "y" : "271",
-      "description" : null
-    },
-    "capabilityChars" : [ ],
-    "requirements" : [ ]
+    "designType" : "Service"
   }, {
-    "id" : "b67307d2-d480-c374-3f66-54a0082a93bc",
-    "name" : "Application Deploy Grenoble",
-    "component" : {
-      "@self" : "/csa/api/topology-model/component-type/4df18ffb-ac0c-477c-9f3c-56d424e6fb66",
-      "groupId" : "com.hp.csa.type",
-      "artifactId" : "ApplicatonDeploy_6b2e066632f6447eb5694aaf8a300c57",
-      "version" : "1.0"
-    },
-    "properties" : [ {
-      "propertyKey" : "configurationUrl",
-      "propertyValue" : {
-        "value" : "https://10.3.85.165:8444/csa/projectDeploy.sh",
+    "@self" : "/csa/api/topology-model/topology/8611a60a-fc81-4005-9b1b-14c6ae5cbaa2",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45de0b90074",
+    "version" : "1.60.00",
+    "displayName" : "HDP Node Chat Application",
 
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "sshPort",
-      "propertyValue" : {
-        "value" : null,
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "installPath",
-
-      "propertyValue" : {
-        "value" : null,
-
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "mysqlusername",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "_modifiable_properties",
-      "propertyValue" : {
-        "value" : "",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "remoteFilePath",
-      "propertyValue" : {
-
-        "value" : "/tmp",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "mysqlpassword",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "serviceCommand",
-      "propertyValue" : {
-        "value" : "sh projectDeploy.sh",
-        "type" : "string"
-
-      }
-    }, {
-      "propertyKey" : "hostname",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "password",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "_enable_modify_during_lifecycle_properties",
-      "propertyValue" : {
-        "value" : "",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "dbhostname",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "dbpassword",
-
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "dbusername",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "artifactPassword",
-      "propertyValue" : {
-        "value" : null,
-
-        "type" : "string"
-
-      }
-    }, {
-      "propertyKey" : "privatekeyPath",
-      "propertyValue" : {
-
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "artifactUrl",
-      "propertyValue" : {
-
-        "value" : "http://10.3.85.165:8080/job/GrenoblePocEnv/lastSuccessfulBuild/artifact/target/grenoble.war",
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "artifactUsername",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "username",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    } ],
-    "outgoingRelations" : [ {
-      "relationType" : "association",
-      "id" : "fbcd9445-577b-08f1-a67c-8eb272c75d20",
-      "properties" : [ {
-        "propertyKey" : "_enable_modify_during_lifecycle_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-        }
-
-      }, {
-        "propertyKey" : "_modifiable_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-        }
-      }, {
-        "propertyKey" : "_relation_type",
-        "propertyValue" : {
-          "value" : {
-            "first" : "Association",
-            "second" : "ASSOCIATION"
-          },
-          "type" : "pair"
-
-        }
-      } ],
-      "relationDescriptorName" : "AppInstallson_ApplicatonDeploy_6b2e066632f6447eb5694aaf8a300c57__VERSION__1^0",
-      "resourceReference" : {
-        "name" : "Apache Tomcat Grenoble"
-      }
-    } ],
-    "annotations" : {
-      "uniqueName" : "ApplicationDeplo0001",
-      "displayName" : "b67307d2-d480-c374-3f66-54a0082a93bc",
-
-      "x" : "457",
-      "y" : "135",
-      "description" : null
-    },
-    "capabilityChars" : [ ],
-
-    "requirements" : [ ]
+    "designType" : "Application"
   }, {
-    "id" : "912102d2-fbae-d03c-f5e3-2503a021532f",
-    "name" : "Selenium Test Grenoble",
-    "component" : {
-      "@self" : "/csa/api/topology-model/component-type/bc8f71dd-7a0c-47e7-bbee-e57dd140521e",
-      "groupId" : "com.hp.csa.type",
+    "@self" : "/csa/api/topology-model/topology/cfc40fe6-7884-4e74-93c1-a8f91e02e422",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45def980091",
+    "version" : "1.50.00",
+    "displayName" : "PetClinic Application on vCenter",
+    "designType" : "Application"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/d86f5445-e930-45ef-b8c8-5c9cae860541",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45dfabf00ac",
+    "version" : "1.50.00",
+    "displayName" : "PetClinic Application with Load Balancer",
+    "designType" : "Application"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/724730f7-e68f-49b0-bb82-de4cada4b568",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e07d900ce",
+    "version" : "15.12.0000",
+    "displayName" : "Deploy Server with HPE OneView Profile and ICSP BuildPlan",
+    "designType" : "None"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/6237136e-6f89-4cc7-abe2-4cd3b8ba45b5",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e178f00f3",
+    "version" : "15.12.0000",
+    "displayName" : "OpenStack Basic Compute, Storage and Network",
+    "designType" : "None"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/180d6135-ce03-48c1-8bed-e6fb5b7dcca4",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e2c130150",
+    "version" : "1.0.0",
+    "displayName" : "Petclinic Docker Image from Docker Hub",
+    "designType" : "None"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/d65fb943-8ad5-48d4-a5b1-130f19929e75",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e357c0171",
+    "version" : "1.60.00",
+    "displayName" : "HDP Database Service",
+    "designType" : "None"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/a8ecd16e-9ec7-46e3-b7be-dea820895607",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e3df9018a",
+    "version" : "15.12.0000",
+    "displayName" : "OpenStack Swift Container",
+    "designType" : "None"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/d59c00f0-1b78-4712-a8d2-0c4e1ac3365e",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e4b4d01c0",
+    "version" : "1.60.00",
+    "displayName" : "HDP DJANGO-CMS Application",
+    "designType" : "None"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/f53a6419-f227-420a-b980-6b2e10f79f1a",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
 
-      "artifactId" : "SeleniumTestGrenoble_5b7c52f5a2674debb454589c51d85af3",
-      "version" : "1.0"
-    },
-    "properties" : [ {
-      "propertyKey" : "_enable_modify_during_lifecycle_properties",
-      "propertyValue" : {
-        "value" : "",
-        "type" : "string"
-      }
-    }, {
+    "artifactId" : "8a83d52555c45a5a0155c45e536c01d9",
+    "version" : "15.12.0000",
+    "displayName" : "Deploy Server with HPE OneView Profile",
+    "designType" : "None"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/95f110e3-2196-4d7b-a18a-dff48f19d6c9",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e5e7201f6",
+    "version" : "1.50.00",
+    "displayName" : "PetClinic Application on AWS",
+    "designType" : "Application"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/32e4d9f2-db1b-4273-982a-6a07fae977ab",
 
-      "propertyKey" : "_modifiable_properties",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e680c020f",
+    "version" : "1.50.00",
+    "displayName" : "Two Tier Infrastructure with MySQL and scalable Tomcat stack",
+    "designType" : "Service"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/9ab9adb8-a3f1-4e18-b699-4381d981bbf7",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e725b0230",
+    "version" : "1.0.0",
+    "displayName" : "Petclinic Docker Image from Docker Hub-SVN",
+    "designType" : "None"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/4af10087-827a-4ca9-87e4-1ae44973d65b",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e7bcd024e",
+    "version" : "15.12.0000",
+    "displayName" : "Amazon EC2",
+    "designType" : "None"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/f78a358e-28d0-4690-95ee-644697765bcb",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
 
-      "propertyValue" : {
-        "value" : "",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "AppHost",
-      "propertyValue" : {
+    "artifactId" : "8a83d52555c45a5a0155c45e8a12028a",
 
-        "value" : "",
-        "type" : "string"
-      }
-    }, {
+    "version" : "1.50.00",
+    "displayName" : "PetClinic Application on Existing Servers",
+    "designType" : "Application"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/5647cfdd-342c-4581-ac4a-ef858df57290",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555c45a5a0155c45e933602a7",
+    "version" : "1.0.0",
+    "displayName" : "Petclinic Docker with Dockerfile Raw Input",
+    "designType" : "Application"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/b3513b08-d331-4cd7-ac6d-e14a528ce1d1",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
 
-      "propertyKey" : "artifactPassword",
+    "artifactId" : "8a83d52555dd19900155ddff09c51c1a",
+    "version" : "2.0.0",
+    "displayName" : "Grenoble POC",
+    "designType" : "Application"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/6f526c65-19c5-4883-a41b-9f9fe7706ba4",
 
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555dd19900155ddff09c51c1a",
+    "version" : "1.0.0",
+    "displayName" : "Grenoble POC",
+    "designType" : "Application"
+  }, {
+    "@self" : "/csa/api/topology-model/topology/501ad571-d0f7-48c2-8c0b-a20cb0b5d602",
+    "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
 
-      }
-    }, {
-      "propertyKey" : "privatekeyPath",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "artifactUrl",
-      "propertyValue" : {
-        "value" : "http://10.3.85.165:8080/job/GrenoblePocEnv/lastSuccessfulBuild/artifact/target/Selenium.zip",
-        "type" : "string"
-      }
-
-    }, {
-
-      "propertyKey" : "artifactUsername",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-
-      }
-    }, {
-      "propertyKey" : "SelPort",
-      "propertyValue" : {
-
-        "value" : "7789",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "remoteFilePath",
-      "propertyValue" : {
-        "value" : "C:\\Users\\skumar81\\Desktop\\SeleniumCOdar",
-        "type" : "string"
-      }
-    } ],
-    "outgoingRelations" : [ {
-      "relationType" : "association",
-      "id" : "744f3583-ffa3-b63d-eece-69c6aede6a44",
-      "properties" : [ {
-
-        "propertyKey" : "_enable_modify_during_lifecycle_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-        }
-
-      }, {
-        "propertyKey" : "_modifiable_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-
-        }
-      }, {
-        "propertyKey" : "_relation_type",
-        "propertyValue" : {
-          "value" : {
-            "first" : "Association",
-            "second" : "ASSOCIATION"
-          },
-          "type" : "pair"
-        }
-      } ],
-      "relationDescriptorName" : "Tests_SeleniumTestGrenoble_5b7c52f5a2674debb454589c51d85af3__VERSION__1^0__GROUPID__com^hp^csa^type",
-      "resourceReference" : {
-        "name" : "Application Deploy Grenoble"
-      }
-    } ],
-    "annotations" : {
-      "uniqueName" : "SeleniumTestGren0001",
-      "displayName" : "912102d2-fbae-d03c-f5e3-2503a021532f",
-      "x" : "450",
-      "y" : "1",
-      "description" : null
-    },
-    "capabilityChars" : [ ],
-    "requirements" : [ ]
-  } ],
-  "revision" : 65,
-  "properties" : [ ],
-  "iconUrl" : "/csa/images/library/Thriving_economy_RGB_blue_NT.png",
-  "tagIds" : [ ],
-  "state" : "UNLOCKED",
-  "hidden" : false,
-  "partial" : false,
-  "profiles" : [ ],
-  "annotations" : {
-    "serviceBlueprintId" : "8a83d52555dd19900155ddff854e1c2a",
-    "providerType" : "independent"
-  }
+    "groupId" : "com.hp.csa",
+    "artifactId" : "8a83d52555dd19900156072172794196",
+    "version" : "1.0.0",
+    "displayName" : "AWS Test Sagy",
+    "designType" : "None"
+  } ]
 }
