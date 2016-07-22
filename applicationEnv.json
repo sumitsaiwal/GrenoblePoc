@@ -8,7 +8,7 @@
   "displayName" : "Grenoble POC",
   "description" : "Grenoble POC deployment using new instance from vCenter/Azure/AWS.",
   "resources" : [ {
-    "id" : "f6aa6eff-a20d-703c-2576-87ed402b0329",
+    "id" : "7cfc8313-0f75-99da-f9a4-41bfa615be72",
 
     "name" : "Vcenter_Azure_AWS_Compute",
     "component" : {
@@ -79,7 +79,7 @@
       "propertyKey" : "AWS-amiId",
       "propertyValue" : {
 
-        "value" : "ami-e0c19f83",
+        "value" : "ami-dc361ebf",
         "type" : "string"
       }
     }, {
@@ -111,9 +111,10 @@
 
       }
     }, {
+
       "propertyKey" : "AWS-instanceName",
       "propertyValue" : {
-        "value" : "Grenoble",
+        "value" : null,
         "type" : "string"
       }
     }, {
@@ -133,7 +134,7 @@
       "propertyKey" : "VC-password",
 
       "propertyValue" : {
-        "value" : "ENC(2uDcGOwim2xV8rpFElPwkPU2elB3bXC+)",
+        "value" : "ENC(FPjPml67lNbUVVKMxtrniCdvv1RJ7dxX)",
         "type" : "string_encrypted"
       }
     }, {
@@ -149,17 +150,17 @@
         "value" : null,
         "type" : "string"
       }
-    }, {
-      "propertyKey" : "_modifiable_properties",
-      "propertyValue" : {
-        "value" : "AWS-amiId, AWS-availabilityZone, AWS-instanceName, AWS-instanceType, Azure-location, Azure-offer, Azure-osPlatform, Azure-publisher, Azure-resourceGroupName, Azure-sku, Azure-storageAccount, Azure-subnetName, Azure-virtualNetworkName, Azure-vmAdminPassword, Azure-vmAdminUserName, Azure-vmName, Azure-vmSize, Provider, VC-cpuCount, VC-customizationSpec, VC-memorySize, VC-password, VC-username, VC-vmNamePrefix, VC-vmTemplateReference",
-        "type" : "string"
-      }
 
     }, {
       "propertyKey" : "Azure-sku",
       "propertyValue" : {
         "value" : "14.04.4-LTS",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "_modifiable_properties",
+      "propertyValue" : {
+        "value" : "AWS-amiId, AWS-availabilityZone, AWS-instanceType, Azure-location, Azure-offer, Azure-osPlatform, Azure-publisher, Azure-resourceGroupName, Azure-sku, Azure-storageAccount, Azure-subnetName, Azure-virtualNetworkName, Azure-vmAdminPassword, Azure-vmAdminUserName, Azure-vmName, Azure-vmSize, Provider, VC-cpuCount, VC-customizationSpec, VC-memorySize, VC-password, VC-username, VC-vmNamePrefix, VC-vmTemplateReference",
         "type" : "string"
       }
     }, {
@@ -185,7 +186,7 @@
     }, {
       "propertyKey" : "VC-vmNamePrefix",
       "propertyValue" : {
-        "value" : "grenoble",
+        "value" : "Grenoble",
 
         "type" : "string"
       }
@@ -340,7 +341,6 @@
       }
     }, {
       "propertyKey" : "Azure-subnetName",
-
       "propertyValue" : {
         "value" : "Subnet1",
         "type" : "string"
@@ -353,13 +353,13 @@
       }
 
     }, {
-      "propertyKey" : "AWS-securityGroupIds",
+      "propertyKey" : "username",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
     }, {
-      "propertyKey" : "username",
+      "propertyKey" : "AWS-securityGroupIds",
 
       "propertyValue" : {
         "value" : null,
@@ -370,11 +370,11 @@
     "outgoingRelations" : [ ],
     "annotations" : {
       "uniqueName" : "Vcenter_Azure_AW0001",
-      "displayName" : "f6aa6eff-a20d-703c-2576-87ed402b0329",
+      "displayName" : "7cfc8313-0f75-99da-f9a4-41bfa615be72",
 
-      "x" : "556",
+      "x" : "500",
 
-      "y" : "398",
+      "y" : "406",
       "description" : null
     },
     "capabilityChars" : [ ],
@@ -516,7 +516,7 @@
     } ],
     "outgoingRelations" : [ {
       "relationType" : "association",
-      "id" : "a58d1c0e-3988-b3d9-845b-d9834061d6bd",
+      "id" : "673da794-95e2-1c21-7af2-de29eaf1b971",
       "properties" : [ {
         "propertyKey" : "_enable_modify_during_lifecycle_properties",
         "propertyValue" : {
@@ -718,7 +718,7 @@
 
     }, {
       "relationType" : "association",
-      "id" : "3fe276bb-21e9-e92a-c0aa-facd9ef82c16",
+      "id" : "adf03e69-c0f8-e679-a664-a70830afd8b7",
       "properties" : [ {
         "propertyKey" : "_enable_modify_during_lifecycle_properties",
         "propertyValue" : {
@@ -834,54 +834,50 @@
         "type" : "string"
       }
     }, {
-
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
       "propertyValue" : {
         "value" : "",
         "type" : "string"
-
       }
     }, {
       "propertyKey" : "dbhostname",
       "propertyValue" : {
         "value" : null,
-
         "type" : "string"
       }
-
     }, {
       "propertyKey" : "dbpassword",
+
       "propertyValue" : {
         "value" : null,
-
         "type" : "string"
       }
-
     }, {
       "propertyKey" : "dbusername",
       "propertyValue" : {
         "value" : null,
-
-        "type" : "string"
-      }
-
-    }, {
-      "propertyKey" : "artifactUrl",
-      "propertyValue" : {
-        "value" : "http://10.3.85.165:8080/job/GrenoblePOC/lastSuccessfulBuild/artifact/target/grenoble.war",
         "type" : "string"
       }
     }, {
       "propertyKey" : "artifactPassword",
       "propertyValue" : {
+        "value" : null,
+
+        "type" : "string"
+
+      }
+    }, {
+      "propertyKey" : "privatekeyPath",
+      "propertyValue" : {
 
         "value" : null,
         "type" : "string"
       }
     }, {
-      "propertyKey" : "privatekeyPath",
+      "propertyKey" : "artifactUrl",
       "propertyValue" : {
-        "value" : null,
+
+        "value" : "http://10.3.85.165:8080/job/GrenoblePocEnv/lastSuccessfulBuild/artifact/target/grenoble.war",
 
         "type" : "string"
       }
@@ -934,8 +930,8 @@
       "uniqueName" : "ApplicationDeplo0001",
       "displayName" : "b67307d2-d480-c374-3f66-54a0082a93bc",
 
-      "x" : "449",
-      "y" : "136",
+      "x" : "457",
+      "y" : "135",
       "description" : null
     },
     "capabilityChars" : [ ],
@@ -952,15 +948,15 @@
       "version" : "1.0"
     },
     "properties" : [ {
-
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
       "propertyValue" : {
         "value" : "",
         "type" : "string"
-
       }
     }, {
+
       "propertyKey" : "_modifiable_properties",
+
       "propertyValue" : {
         "value" : "",
         "type" : "string"
@@ -968,15 +964,18 @@
     }, {
       "propertyKey" : "AppHost",
       "propertyValue" : {
+
         "value" : "",
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "artifactPassword",
+
       "propertyValue" : {
         "value" : null,
-
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "privatekeyPath",
@@ -984,11 +983,11 @@
         "value" : null,
         "type" : "string"
       }
-    }, {
 
+    }, {
       "propertyKey" : "artifactUrl",
       "propertyValue" : {
-        "value" : "http://10.3.85.165:8080/job/GrenoblePOC/lastSuccessfulBuild/artifact/target/Selenium.zip",
+        "value" : "http://10.3.85.165:8080/job/GrenoblePocEnv/lastSuccessfulBuild/artifact/target/Selenium.zip",
         "type" : "string"
       }
 
@@ -1057,7 +1056,7 @@
     "capabilityChars" : [ ],
     "requirements" : [ ]
   } ],
-  "revision" : 54,
+  "revision" : 65,
   "properties" : [ ],
   "iconUrl" : "/csa/images/library/Thriving_economy_RGB_blue_NT.png",
   "tagIds" : [ ],
