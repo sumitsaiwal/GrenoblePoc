@@ -8,128 +8,14 @@
   "displayName" : "Grenoble POC",
   "description" : "Grenoble POC deployment using Existing servers.",
   "resources" : [ {
-    "id" : "9ae26eaf-3d72-739d-1b3d-c948f99cd4eb",
-
-    "name" : "seleniumTest",
-    "component" : {
-      "@self" : "/csa/api/topology-model/component-type/2edd0a12-5cfe-4e00-93ae-808951d5a425",
-      "groupId" : "com.hp.csa.type",
-      "artifactId" : "seleniumTest_6d033423610c428eb4237b78facd4373",
-
-      "version" : "1.0"
-    },
-    "properties" : [ {
-      "propertyKey" : "_enable_modify_during_lifecycle_properties",
-      "propertyValue" : {
-        "value" : "",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "artifactPassword",
-
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "privatekeyPath",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-      }
-    }, {
-
-      "propertyKey" : "artifactUrl",
-      "propertyValue" : {
-        "value" : "http://10.3.85.165:8080/job/GrenoblePOC/lastSuccessfulBuild/artifact/target/Selenium.zip",
-        "type" : "string"
-
-      }
-
-    }, {
-      "propertyKey" : "AppHost",
-      "propertyValue" : {
-        "value" : "",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "_modifiable_properties",
-      "propertyValue" : {
-        "value" : "",
-
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "artifactUsername",
-      "propertyValue" : {
-        "value" : null,
-        "type" : "string"
-
-      }
-    }, {
-      "propertyKey" : "SelPort",
-      "propertyValue" : {
-        "value" : "7789",
-        "type" : "string"
-      }
-    }, {
-      "propertyKey" : "remoteFilePath",
-      "propertyValue" : {
-        "value" : "C:\\Users\\skumar81\\Desktop\\SeleniumCOdar",
-        "type" : "string"
-      }
-    } ],
-    "outgoingRelations" : [ {
-      "relationType" : "association",
-      "id" : "56b84d79-e2b5-1cc3-5349-11d579aab3d0",
-      "properties" : [ {
-        "propertyKey" : "_enable_modify_during_lifecycle_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-        }
-      }, {
-        "propertyKey" : "_modifiable_properties",
-        "propertyValue" : {
-          "value" : null,
-          "type" : "string"
-
-        }
-      }, {
-        "propertyKey" : "_relation_type",
-        "propertyValue" : {
-          "value" : {
-            "first" : "Association",
-            "second" : "ASSOCIATION"
-          },
-          "type" : "pair"
-        }
-      } ],
-      "relationDescriptorName" : "Test_seleniumTest_6d033423610c428eb4237b78facd4373__VERSION__1^0",
-      "resourceReference" : {
-
-        "name" : "Application Deploy"
-      }
-    } ],
-    "annotations" : {
-      "uniqueName" : "seleniumTest0001",
-      "displayName" : "9ae26eaf-3d72-739d-1b3d-c948f99cd4eb",
-      "x" : "477",
-      "y" : "73",
-
-      "description" : null
-    },
-    "capabilityChars" : [ ],
-    "requirements" : [ ]
-  }, {
-
     "id" : "d8cd294d-ec8f-a4c8-9769-5ee06818eb3e",
-    "name" : "JDK Installation",
 
+    "name" : "JDK Installation",
     "component" : {
       "@self" : "/csa/api/topology-model/component-type/6eceb124-f6b1-4fa8-b21a-4d92b5374873",
       "groupId" : "com.hp.csa.type",
       "artifactId" : "JDK_Installation_542c05de_a6ce_47d8_99e7_aafbbc144278_9b1eee91837747f9930b02e3d0f2f47e",
+
       "version" : "1.0"
     },
     "properties" : [ {
@@ -138,15 +24,13 @@
         "value" : "http://10.3.85.217:8081/nexus/content/repositories/AT2C/Apache/Tomcat_Server/Version/7.0.65/Linux/Scripts/AT2C_Cloudmap_install_jdk.sh",
         "type" : "string"
       }
-
     }, {
       "propertyKey" : "sshPort",
-      "propertyValue" : {
 
+      "propertyValue" : {
         "value" : "22",
         "type" : "string"
       }
-
     }, {
       "propertyKey" : "installPath",
       "propertyValue" : {
@@ -154,23 +38,27 @@
         "type" : "string"
       }
     }, {
-      "propertyKey" : "appProtocol",
 
+      "propertyKey" : "appProtocol",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "_modifiable_properties",
       "propertyValue" : {
-
         "value" : "",
         "type" : "string"
       }
     }, {
       "propertyKey" : "appPort",
+
       "propertyValue" : {
+
         "value" : null,
+
         "type" : "string"
       }
     }, {
@@ -179,17 +67,13 @@
         "value" : "/tmp",
         "type" : "string"
       }
-
     }, {
       "propertyKey" : "serviceCommand",
-
       "propertyValue" : {
-        "value" : "sh AT2C_Cloudmap_install_jdk.sh",
+        "value" : "sudo sh AT2C_Cloudmap_install_jdk.sh",
         "type" : "string"
-
       }
     }, {
-
       "propertyKey" : "hostname",
       "propertyValue" : {
         "value" : null,
@@ -205,11 +89,13 @@
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
       "propertyValue" : {
         "value" : "",
+
         "type" : "string"
       }
     }, {
       "propertyKey" : "port",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
       }
@@ -224,12 +110,15 @@
       "propertyValue" : {
         "value" : "http://10.3.85.217:8081/nexus/content/repositories/AT2C/Apache/Tomcat_Server/Version/7.0.65/Linux/Packages/jdk-7u79-linux-x64.tar.gz",
         "type" : "string"
+
       }
     }, {
+
       "propertyKey" : "artifactPassword",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
+
       }
     }, {
 
@@ -242,9 +131,9 @@
       "propertyKey" : "artifactUsername",
       "propertyValue" : {
         "value" : null,
-
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "username",
       "propertyValue" : {
@@ -256,16 +145,15 @@
       "relationType" : "association",
       "id" : "bccde27e-3396-6532-13e1-f3d327a0be98",
       "properties" : [ {
-
         "propertyKey" : "_enable_modify_during_lifecycle_properties",
         "propertyValue" : {
           "value" : null,
           "type" : "string"
         }
+
       }, {
         "propertyKey" : "_modifiable_properties",
         "propertyValue" : {
-
           "value" : null,
           "type" : "string"
         }
@@ -282,16 +170,19 @@
       "relationDescriptorName" : "JDK_install_JDK_Installation_542c05de_a6ce_47d8_99e7_aafbbc144278_9b1eee91837747f9930b02e3d0f2f47e__VERSION__1^0",
       "resourceReference" : {
         "name" : "Existing Server"
+
       }
+
     } ],
+
     "annotations" : {
       "uniqueName" : "JDKInstallation0001",
       "displayName" : "d8cd294d-ec8f-a4c8-9769-5ee06818eb3e",
-      "x" : "338",
+      "x" : "339",
       "y" : "533",
       "description" : null
-
     },
+
     "capabilityChars" : [ ],
     "requirements" : [ ]
   }, {
@@ -306,16 +197,18 @@
     "properties" : [ {
       "propertyKey" : "PASSWORD",
       "propertyValue" : {
-        "value" : "ENC(M97iNYdJjxu6YLeZfjDtxA==)",
+        "value" : "ENC(iN3damGiN7Q3QxZis7xT+A==)",
         "type" : "string_encrypted"
       }
     }, {
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
       "propertyValue" : {
+
         "value" : "",
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "response",
       "propertyValue" : {
         "value" : null,
@@ -324,7 +217,6 @@
     }, {
       "propertyKey" : "IPADDRESS",
       "propertyValue" : {
-
         "value" : "10.3.85.197",
         "type" : "string"
       }
@@ -332,6 +224,7 @@
       "propertyKey" : "USERNAME",
       "propertyValue" : {
         "value" : "root",
+
         "type" : "string"
       }
     }, {
@@ -344,6 +237,7 @@
       "propertyKey" : "HOST-FQDN",
       "propertyValue" : {
         "value" : null,
+
         "type" : "string"
       }
     }, {
@@ -356,14 +250,18 @@
       "propertyKey" : "INSTANCE-ID",
       "propertyValue" : {
         "value" : null,
+
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "PRIVATEKEY",
+
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "TIMEOUT",
       "propertyValue" : {
@@ -371,12 +269,10 @@
         "type" : "string"
       }
     }, {
-
       "propertyKey" : "Result",
-
       "propertyValue" : {
-        "value" : null,
 
+        "value" : null,
         "type" : "string"
       }
     } ],
@@ -395,16 +291,15 @@
     "name" : "Apache Tomcat",
     "component" : {
       "@self" : "/csa/api/topology-model/component-type/9efd9f57-6d45-49df-ac94-798f8999ffdf",
+
       "groupId" : "com.hp.csa.type",
       "artifactId" : "Apache_Tomcat_dad6b8f7_5c7f_441a_9145_770f29527131_24dac1bba84d4547bfc0d8871886bd2f",
       "version" : "1.0"
-
     },
     "properties" : [ {
-
       "propertyKey" : "configurationUrl",
-      "propertyValue" : {
 
+      "propertyValue" : {
         "value" : "http://10.3.85.217:8081/nexus/content/repositories/AT2C/Apache/Tomcat_Server/Version/7.0.65/Linux/Scripts/AT2C_CLoudmap_Apache_Tomcat.sh",
         "type" : "string"
       }
@@ -412,33 +307,31 @@
       "propertyKey" : "sshPort",
       "propertyValue" : {
         "value" : "22",
+
         "type" : "string"
       }
-
     }, {
       "propertyKey" : "installPath",
-
       "propertyValue" : {
         "value" : "/opt",
         "type" : "string"
-      }
 
+      }
     }, {
       "propertyKey" : "appProtocol",
+
       "propertyValue" : {
         "value" : null,
         "type" : "string"
-
       }
     }, {
       "propertyKey" : "_modifiable_properties",
       "propertyValue" : {
+
         "value" : "",
         "type" : "string"
-
       }
     }, {
-
       "propertyKey" : "appPort",
       "propertyValue" : {
         "value" : null,
@@ -450,12 +343,11 @@
         "value" : "/tmp",
 
         "type" : "string"
-
       }
     }, {
       "propertyKey" : "serviceCommand",
       "propertyValue" : {
-        "value" : "sh AT2C_CLoudmap_Apache_Tomcat.sh",
+        "value" : "sudo sh AT2C_CLoudmap_Apache_Tomcat.sh",
         "type" : "string"
       }
     }, {
@@ -468,7 +360,6 @@
       "propertyKey" : "password",
       "propertyValue" : {
         "value" : null,
-
         "type" : "string"
       }
     }, {
@@ -477,6 +368,7 @@
         "value" : "",
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "port",
       "propertyValue" : {
@@ -507,10 +399,12 @@
       "propertyValue" : {
         "value" : null,
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "artifactUsername",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
       }
@@ -518,6 +412,7 @@
       "propertyKey" : "username",
       "propertyValue" : {
         "value" : null,
+
         "type" : "string"
       }
     } ],
@@ -546,17 +441,17 @@
           },
           "type" : "pair"
         }
-
       } ],
-
       "relationDescriptorName" : "Tomcat_Installs_on_Apache_Tomcat_dad6b8f7_5c7f_441a_9145_770f29527131_24dac1bba84d4547bfc0d8871886bd2f__VERSION__1^0",
       "resourceReference" : {
         "name" : "Existing Server"
       }
     }, {
+
       "relationType" : "association",
       "id" : "6e73e1ad-0895-0d09-b316-319b346b5673",
       "properties" : [ {
+
         "propertyKey" : "_enable_modify_during_lifecycle_properties",
 
         "propertyValue" : {
@@ -566,7 +461,6 @@
       }, {
         "propertyKey" : "_modifiable_properties",
         "propertyValue" : {
-
           "value" : null,
           "type" : "string"
         }
@@ -574,24 +468,24 @@
         "propertyKey" : "_relation_type",
         "propertyValue" : {
           "value" : {
-            "first" : "Association",
 
+            "first" : "Association",
             "second" : "ASSOCIATION"
+
           },
 
           "type" : "pair"
         }
+
       } ],
       "relationDescriptorName" : "Java_Home_Apache_Tomcat_dad6b8f7_5c7f_441a_9145_770f29527131_24dac1bba84d4547bfc0d8871886bd2f__VERSION__1^0",
       "resourceReference" : {
         "name" : "JDK Installation"
-
       }
     } ],
     "annotations" : {
       "uniqueName" : "ApacheTomcat0001",
       "displayName" : "b482d61b-cbfb-f07d-8504-cc1dbe9e5ccb",
-
       "x" : "483",
       "y" : "360",
       "description" : null
@@ -599,30 +493,36 @@
     "capabilityChars" : [ ],
     "requirements" : [ ]
   }, {
+
     "id" : "b280feed-dbfa-d3a1-b87e-5d9b966a5c6b",
     "name" : "Application Deploy",
     "component" : {
       "@self" : "/csa/api/topology-model/component-type/8f9b6a2f-eeff-44a9-8dd9-df86c64abbf3",
-
       "groupId" : "com.hp.csa.type",
       "artifactId" : "ApplicatonDeploy_cd12d3a1c83242de96b125a1f49e3215",
       "version" : "1.0"
     },
     "properties" : [ {
-      "propertyKey" : "configurationUrl",
-      "propertyValue" : {
-        "value" : "https://10.3.85.165:8444/csa/projectDeploy.sh",
-        "type" : "string"
-      }
-    }, {
+
       "propertyKey" : "sshPort",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
       }
     }, {
+
+      "propertyKey" : "configurationUrl",
+      "propertyValue" : {
+
+        "value" : "https://10.3.85.165:8444/csa/projectDeploy.sh",
+        "type" : "string"
+      }
+    }, {
+
       "propertyKey" : "installPath",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
       }
@@ -636,24 +536,26 @@
       "propertyKey" : "_modifiable_properties",
       "propertyValue" : {
         "value" : "",
-
         "type" : "string"
-      }
-    }, {
 
+      }
+
+    }, {
       "propertyKey" : "mysqlpassword",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "remoteFilePath",
       "propertyValue" : {
         "value" : "/tmp",
         "type" : "string"
-      }
-    }, {
 
+      }
+
+    }, {
       "propertyKey" : "hostname",
       "propertyValue" : {
         "value" : null,
@@ -663,72 +565,72 @@
       "propertyKey" : "password",
       "propertyValue" : {
         "value" : null,
-
         "type" : "string"
       }
     }, {
       "propertyKey" : "serviceCommand",
       "propertyValue" : {
-        "value" : "sh projectDeploy.sh",
+        "value" : "sudo sh projectDeploy.sh",
         "type" : "string"
+
       }
     }, {
+
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
       "propertyValue" : {
+
         "value" : "",
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "dbhostname",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
     }, {
-
       "propertyKey" : "dbpassword",
       "propertyValue" : {
         "value" : null,
-
         "type" : "string"
       }
     }, {
       "propertyKey" : "dbusername",
       "propertyValue" : {
         "value" : null,
-
         "type" : "string"
       }
     }, {
       "propertyKey" : "artifactPassword",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
+
       }
     }, {
+
       "propertyKey" : "artifactUrl",
       "propertyValue" : {
-        "value" : "http://10.3.85.165:8080/job/GrenoblePOC/lastSuccessfulBuild/artifact/target/grenoble.war",
+        "value" : "http://10.3.85.165:8080/job/GrenoblePOCforExistingServer/lastSuccessfulBuild/artifact/target/grenoble.war",
         "type" : "string"
       }
     }, {
       "propertyKey" : "privatekeyPath",
-
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
     }, {
-
       "propertyKey" : "artifactUsername",
-
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
     }, {
-
       "propertyKey" : "username",
+
       "propertyValue" : {
         "value" : null,
         "type" : "string"
@@ -746,22 +648,21 @@
       }, {
         "propertyKey" : "_modifiable_properties",
         "propertyValue" : {
-
           "value" : null,
           "type" : "string"
         }
       }, {
+
         "propertyKey" : "_relation_type",
         "propertyValue" : {
           "value" : {
             "first" : "Association",
+
             "second" : "ASSOCIATION"
           },
-
           "type" : "pair"
         }
       } ],
-
       "relationDescriptorName" : "AppInstallson_ApplicatonDeploy_cd12d3a1c83242de96b125a1f49e3215__VERSION__1^0__GROUPID__com^hp^csa^type",
       "resourceReference" : {
         "name" : "Apache Tomcat"
@@ -776,8 +677,124 @@
     },
     "capabilityChars" : [ ],
     "requirements" : [ ]
+  }, {
+    "id" : "9ae26eaf-3d72-739d-1b3d-c948f99cd4eb",
+    "name" : "seleniumTest",
+
+    "component" : {
+      "@self" : "/csa/api/topology-model/component-type/2edd0a12-5cfe-4e00-93ae-808951d5a425",
+
+      "groupId" : "com.hp.csa.type",
+      "artifactId" : "seleniumTest_6d033423610c428eb4237b78facd4373",
+      "version" : "1.0"
+    },
+    "properties" : [ {
+
+      "propertyKey" : "_enable_modify_during_lifecycle_properties",
+      "propertyValue" : {
+        "value" : "",
+        "type" : "string"
+      }
+    }, {
+
+      "propertyKey" : "artifactPassword",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "privatekeyPath",
+      "propertyValue" : {
+
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "artifactUrl",
+
+      "propertyValue" : {
+        "value" : "http://10.3.85.165:8080/job/GrenoblePOCforExistingServer/lastSuccessfulBuild/artifact/target/Selenium.zip",
+        "type" : "string"
+      }
+    }, {
+
+      "propertyKey" : "AppHost",
+      "propertyValue" : {
+        "value" : "",
+
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "_modifiable_properties",
+      "propertyValue" : {
+        "value" : "",
+        "type" : "string"
+
+      }
+    }, {
+      "propertyKey" : "artifactUsername",
+      "propertyValue" : {
+        "value" : null,
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "SelPort",
+      "propertyValue" : {
+        "value" : "7789",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "remoteFilePath",
+      "propertyValue" : {
+        "value" : "",
+        "type" : "string"
+      }
+    } ],
+    "outgoingRelations" : [ {
+      "relationType" : "association",
+      "id" : "56b84d79-e2b5-1cc3-5349-11d579aab3d0",
+      "properties" : [ {
+        "propertyKey" : "_enable_modify_during_lifecycle_properties",
+        "propertyValue" : {
+          "value" : null,
+          "type" : "string"
+        }
+      }, {
+        "propertyKey" : "_modifiable_properties",
+        "propertyValue" : {
+
+          "value" : null,
+          "type" : "string"
+        }
+      }, {
+        "propertyKey" : "_relation_type",
+        "propertyValue" : {
+          "value" : {
+            "first" : "Association",
+            "second" : "ASSOCIATION"
+
+          },
+          "type" : "pair"
+
+        }
+
+      } ],
+      "relationDescriptorName" : "Test_seleniumTest_6d033423610c428eb4237b78facd4373__VERSION__1^0",
+      "resourceReference" : {
+        "name" : "Application Deploy"
+      }
+    } ],
+    "annotations" : {
+      "uniqueName" : "seleniumTest0001",
+      "displayName" : "9ae26eaf-3d72-739d-1b3d-c948f99cd4eb",
+      "x" : "477",
+      "y" : "73",
+      "description" : null
+    },
+    "capabilityChars" : [ ],
+    "requirements" : [ ]
   } ],
-  "revision" : 58,
+  "revision" : 67,
   "properties" : [ ],
   "iconUrl" : "/csa/images/library/Thriving_economy_RGB_blue_NT.png",
   "tagIds" : [ ],
