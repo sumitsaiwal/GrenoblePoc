@@ -198,7 +198,7 @@
     "properties" : [ {
       "propertyKey" : "PASSWORD",
       "propertyValue" : {
-        "value" : "ENC(VhKbvIIfUMW8v4FhWD/BEg==)",
+        "value" : "ENC(w6cNpRaFtxj+qyQ4FuKAGg==)",
         "type" : "string_encrypted"
       }
     }, {
