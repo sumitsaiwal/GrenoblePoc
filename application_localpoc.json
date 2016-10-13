@@ -174,7 +174,7 @@
     "properties" : [ {
       "propertyKey" : "PASSWORD",
       "propertyValue" : {
-        "value" : "ENC(zceWVl7c7mrsGeuOesUg66vi2NTvG3vS)",
+        "value" : "ENC(CkmjQvQxKqZuZCgemkdSSbbg71Y73BE1)",
         "type" : "string_encrypted"
       }
     }, {
@@ -547,7 +547,7 @@
     }, {
       "propertyKey" : "artifactUrl",
       "propertyValue" : {
-        "value" : "http://10.3.85.185:8080/job/Grenoble_Codar_POC/lastSuccessfulBuild/artifact/target/grenoble.war",
+        "value" : "http://15.213.6.31:7555/jenkins/job/GrenoblePoC%20using%20Existing%20Server/lastSuccessfulBuild/artifact/target/grenoble.war",
         "type" : "string"
       }
     }, {
@@ -613,7 +613,7 @@
     "properties" : [ {
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
       "propertyValue" : {
-        "value" : null,
+        "value" : "",
         "type" : "string"
       }
     }, {
@@ -629,12 +629,6 @@
         "type" : "string"
       }
     }, {
-      "propertyKey" : "artifactUrl",
-      "propertyValue" : {
-        "value" : "http://10.3.85.185:8080/job/Grenoble_Codar_POC/lastSuccessfulBuild/artifact/target/Selenium.zip",
-        "type" : "string"
-      }
-    }, {
       "propertyKey" : "AppHost",
       "propertyValue" : {
         "value" : null,
@@ -643,7 +637,13 @@
     }, {
       "propertyKey" : "_modifiable_properties",
       "propertyValue" : {
-        "value" : null,
+        "value" : "",
+        "type" : "string"
+      }
+    }, {
+      "propertyKey" : "artifactUrl",
+      "propertyValue" : {
+        "value" : "http://15.213.6.31:7555/jenkins/job/GrenoblePoC%20using%20Existing%20Server/lastSuccessfulBuild/artifact/target/Selenium.zip",
         "type" : "string"
       }
     }, {
@@ -655,7 +655,7 @@
     }, {
       "propertyKey" : "SelPort",
       "propertyValue" : {
-        "value" : "7789",
+        "value" : "7788",
         "type" : "string"
       }
     }, {
@@ -704,7 +704,7 @@
     "capabilityChars" : [ ],
     "requirements" : [ ]
   } ],
-  "revision" : 73,
+  "revision" : 76,
   "properties" : [ ],
   "iconUrl" : "/csa/images/library/Thriving_economy_RGB_blue_NT.png",
   "tagIds" : [ ],
