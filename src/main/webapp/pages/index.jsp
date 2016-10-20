@@ -53,7 +53,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.jsp">Hewlett Packard Enterprise</a>
+                <a class="navbar-brand" href="index.jsp">Hewlett Packard Enterprise CODAR POC</a>
             </div>
             <!-- /.navbar-header -->
 
