@@ -23,7 +23,7 @@ node {
       pkg.push 'docker-demo'
   }
 
-  stage 'Stage image'
+  stage 'Deploy to ECS'
   //Deploy image to staging in ECS
 
         sh "aws ecs update-service --service staging-game  --cluster staging --desired-count 0"
@@ -55,7 +55,7 @@ node {
         timeout(time: 5, unit: 'MINUTES') {
             waitUntil {
                 try {
-                    sh "curl http://52.37.74.74:8080/easyleave"
+                    sh "curl http://35.161.54.12:8080/grenoble"
                     return true
                 } catch (Exception e) {
                     return false
@@ -64,44 +64,3 @@ node {
         }
         echo "easyleave#${env.BUILD_NUMBER} SUCCESSFULLY deployed to http://52.37.74.74:8080/easyleave"
         input 'Does staging http://52.37.74.74:8080/easyleave look okay?'
-
-  stage 'Deploy to ECS'
-  //Deploy image to production in ECS
-        sh "aws ecs update-service --service production-deploy-game  --cluster production --desired-count 0"
-        timeout(time: 5, unit: 'MINUTES') {
-            waitUntil {
-                sh "aws ecs describe-services --service production-deploy-game  --cluster production   > .amazon-ecs-service-status.json"
-
-                // parse `describe-services` output
-                def ecsServicesStatusAsJson = readFile(".amazon-ecs-service-status.json")
-                def ecsServicesStatus = new groovy.json.JsonSlurper().parseText(ecsServicesStatusAsJson)
-                println "$ecsServicesStatus"
-                def ecsServiceStatus = ecsServicesStatus.services[0]
-                return ecsServiceStatus.get('runningCount') == 0 && ecsServiceStatus.get('status') == "ACTIVE"
-            }
-        }
-        sh "aws ecs update-service --service production-deploy-game  --cluster production  --desired-count 1"
-        timeout(time: 5, unit: 'MINUTES') {
-            waitUntil {
-                sh "aws ecs describe-services --service production-deploy-game  --cluster production  > .amazon-ecs-service-status.json"
-
-                // parse `describe-services` output
-                def ecsServicesStatusAsJson = readFile(".amazon-ecs-service-status.json")
-                def ecsServicesStatus = new groovy.json.JsonSlurper().parseText(ecsServicesStatusAsJson)
-                println "$ecsServicesStatus"
-                def ecsServiceStatus = ecsServicesStatus.services[0]
-                return ecsServiceStatus.get('runningCount') == 1 && ecsServiceStatus.get('status') == "ACTIVE"
-            }
-        }
-        timeout(time: 5, unit: 'MINUTES') {
-            waitUntil {
-                try {
-                    sh "curl http://52.202.249.4:80"
-                    return true
-                } catch (Exception e) {
-                    return false
-                }
-            }
-        }
-        echo "easyleave#${env.BUILD_NUMBER} SUCCESSFULLY deployed to http://52.202.249.4:80"
-    }
