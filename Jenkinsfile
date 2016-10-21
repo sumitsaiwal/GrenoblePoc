@@ -63,3 +63,5 @@ node {
             }
         }
         echo "easyleave#${env.BUILD_NUMBER} SUCCESSFULLY deployed to http://52.37.74.74:8080/easyleave"
+        input 'Does http://35.161.54.12:8080/grenoble look okay?'
+}
