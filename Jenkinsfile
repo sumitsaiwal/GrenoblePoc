@@ -2,7 +2,7 @@
 node {
   stage 'Pull from SCM'
   //Passing the pipeline the ID of my GitHub credentials and specifying the repo for my app
-  git credentialsId: '8792d64b-67c1-450e-a23f-08e8c1eb7b38', url: 'https://github.com/sumitsaiwal/easyleave.git'
+  git credentialsId: '5bd340ec-734d-43c6-b3c7-53a2ec010316', url: 'https://github.com/sumitsaiwal/GrenoblePoc.git'
   //stage 'Test Code'
   //sh 'mvn install'
 
@@ -13,12 +13,12 @@ node {
 
   stage 'Package Image'
   //Packaging the image into a Docker image //CloudBees Docker Custom Build Environment Plugin
-  def pkg = docker.build ('sumitsaiwal/easyleave', '.')
+  def pkg = docker.build ('sumitsaiwal/grenoble', '.')
 
 
   stage 'Push Image to DockerHub'
   //Pushing the packaged app in image into DockerHub //CloudBees Docker Custom Build Environment Plugin //Docker Plugin
-  docker.withRegistry ('https://index.docker.io/v1/', '8792d64b-67c1-450e-a23f-08e8c1eb7b38') {
+  docker.withRegistry ('https://index.docker.io/v1/', '5bd340ec-734d-43c6-b3c7-53a2ec010316') {
       sh 'ls -lart'
       pkg.push 'docker-demo'
   }
