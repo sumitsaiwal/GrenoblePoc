@@ -21,6 +21,7 @@ node {
       sh 'ls -lart'
       pkg.push 'docker-demo'
   }
+  
   stage 'Deploy to ECS'
   //Deploy image to staging in ECS
 
@@ -60,6 +61,6 @@ node {
                 }
             }
         }
-        echo "easyleave#${env.BUILD_NUMBER} SUCCESSFULLY deployed to http://52.37.74.74:8080/easyleave"
+        echo "Dashboard#${env.BUILD_NUMBER} SUCCESSFULLY deployed to http://35.161.54.12:8080/grenoble"
         input 'Does http://35.161.54.12:8080/grenoble look okay?'
 }
