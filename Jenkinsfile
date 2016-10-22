@@ -13,16 +13,15 @@ node {
 
   stage 'Package Image'
   //Packaging the image into a Docker image //CloudBees Docker Custom Build Environment Plugin
-  //def pkg = docker.build ('sumitsaiwal/grenoble', '.')
+  def pkg = docker.build ('sumitsaiwal/grenoble', '.')
   sh 'docker build -t sumitsaiwal/grenoble .'
 
   stage 'Push Image to DockerHub'
   //Pushing the packaged app in image into DockerHub //CloudBees Docker Custom Build Environment Plugin //Docker Plugin
-  //docker.withRegistry ('https://index.docker.io/v1/', 'cacee84c-e05a-46c4-ad9e-441a06259a93') {
-      //sh 'ls -lart'
-      //pkg.push 'docker-demo'
-  //}
-  sh 'docker push sumitsaiwal/grenoble'
+  docker.withRegistry ('https://index.docker.io/v1/', 'cacee84c-e05a-46c4-ad9e-441a06259a93') {
+      sh 'ls -lart'
+      pkg.push 'docker-demo'
+  }
   stage 'Deploy to ECS'
   //Deploy image to staging in ECS
 
