@@ -21,7 +21,7 @@ public class GrenobleDB {
 	public static ArrayList<GrenobleDB> dbUpdate() {
 	ArrayList<GrenobleDB> arr = new ArrayList<GrenobleDB>();
 	arr.add(new GrenobleDB(10, "joe","Uria",22));
-	arr.add(new GrenobleDB(11, "Albert","Einstein",22));
+	arr.add(new GrenobleDB(11, "Sumit","Kumar",22));
 	arr.add(new GrenobleDB(12, "Anna","K. Behrensmeyer",23));
 	arr.add(new GrenobleDB(13, "Blaise","Pascal",21));
 	arr.add(new GrenobleDB(14, "Caroline","Herschel",24));
