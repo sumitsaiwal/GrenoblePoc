@@ -2,17 +2,20 @@
   "@self" : "/csa/api/topology-model/topology/b3513b08-d331-4cd7-ac6d-e14a528ce1d1",
   "@type" : "urn:x-hp:2013:software:cloud:topology_model:topology",
   "groupId" : "com.hp.csa",
+
   "artifactId" : "8f55869f59bd2ef40159c21462ef02ec",
   "version" : "2.0.0",
   "displayName" : "Grenoble POC",
   "description" : "Grenoble POC deployment using new instance from vCenter/Azure/AWS.",
   "resources" : [ {
     "id" : "da2051cc-1487-d50e-561f-bc561d2fef60",
+
     "name" : "JDK Installation Grenoble",
     "component" : {
       "@self" : "/csa/api/topology-model/component-type/de509b69-485e-4945-9790-f74d679f5145",
       "groupId" : "com.hp.csa.type",
       "artifactId" : "JDKInstallationGrenoble_bde4644f0fa943c1be0b97ec9dc8f6c9",
+
       "version" : "1.0"
     },
     "properties" : [ {
@@ -23,6 +26,7 @@
       }
     }, {
       "propertyKey" : "sshPort",
+
       "propertyValue" : {
         "value" : "22",
         "type" : "string"
@@ -34,10 +38,13 @@
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "appProtocol",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "_modifiable_properties",
@@ -47,8 +54,11 @@
       }
     }, {
       "propertyKey" : "appPort",
+
       "propertyValue" : {
+
         "value" : null,
+
         "type" : "string"
       }
     }, {
@@ -79,11 +89,13 @@
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
       "propertyValue" : {
         "value" : null,
+
         "type" : "string"
       }
     }, {
       "propertyKey" : "port",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
       }
@@ -91,6 +103,7 @@
       "propertyKey" : "response",
       "propertyValue" : {
         "value" : null,
+
         "type" : "string"
       }
     }, {
@@ -104,8 +117,10 @@
       "propertyValue" : {
         "value" : "http://15.213.6.35:443/nexus/content/repositories/grenoble/jdk-7u79-linux-x64.tar.gz",
         "type" : "string"
+
       }
     }, {
+
       "propertyKey" : "privatekeyPath",
       "propertyValue" : {
         "value" : null,
@@ -117,6 +132,7 @@
         "value" : null,
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "username",
       "propertyValue" : {
@@ -133,6 +149,7 @@
           "value" : null,
           "type" : "string"
         }
+
       }, {
         "propertyKey" : "_modifiable_properties",
         "propertyValue" : {
@@ -152,10 +169,14 @@
       "relationDescriptorName" : "JDK_JDKInstallationGrenoble_bde4644f0fa943c1be0b97ec9dc8f6c9__VERSION__1^0__GROUPID__com^hp^csa^type",
       "resourceReference" : {
         "name" : "Vcenter_Azure_AWS_Compute"
+
       }
+
     } ],
+
     "annotations" : {
       "uniqueName" : "JDKInstallationG0001",
+
       "displayName" : "da2051cc-1487-d50e-561f-bc561d2fef60",
       "x" : "38",
       "y" : "590",
@@ -175,15 +196,20 @@
     "properties" : [ {
       "propertyKey" : "configurationUrl",
       "propertyValue" : {
+
         "value" : "http://15.213.6.35:443/nexus/content/repositories/grenoble/AT2C_CLoudmap_Apache_Tomcat.sh",
         "type" : "string"
+
       }
+
     }, {
       "propertyKey" : "sshPort",
       "propertyValue" : {
         "value" : "22",
         "type" : "string"
+
       }
+
     }, {
       "propertyKey" : "installPath",
       "propertyValue" : {
@@ -197,8 +223,10 @@
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "_modifiable_properties",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
       }
@@ -222,8 +250,10 @@
       }
     }, {
       "propertyKey" : "password",
+
       "propertyValue" : {
         "value" : null,
+
         "type" : "string"
       }
     }, {
@@ -231,6 +261,7 @@
       "propertyValue" : {
         "value" : "sh AT2C_CLoudmap_Apache_Tomcat.sh",
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
@@ -239,11 +270,13 @@
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "port",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "response",
       "propertyValue" : {
@@ -263,11 +296,13 @@
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "privatekeyPath",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "artifactUsername",
       "propertyValue" : {
@@ -290,8 +325,10 @@
           "value" : null,
           "type" : "string"
         }
+
       }, {
         "propertyKey" : "_modifiable_properties",
+
         "propertyValue" : {
           "value" : null,
           "type" : "string"
@@ -327,10 +364,13 @@
         }
       }, {
         "propertyKey" : "_relation_type",
+
         "propertyValue" : {
           "value" : {
             "first" : "Association",
+
             "second" : "ASSOCIATION"
+
           },
           "type" : "pair"
         }
@@ -338,6 +378,7 @@
       "relationDescriptorName" : "Tomcat_ApacheTomcatGrenoble_7899f16128234232a8c74c2460004cbc__VERSION__1^0__GROUPID__com^hp^csa^type",
       "resourceReference" : {
         "name" : "Vcenter_Azure_AWS_Compute"
+
       }
     } ],
     "annotations" : {
@@ -354,6 +395,7 @@
     "name" : "Application Deploy Grenoble",
     "component" : {
       "@self" : "/csa/api/topology-model/component-type/4df18ffb-ac0c-477c-9f3c-56d424e6fb66",
+
       "groupId" : "com.hp.csa.type",
       "artifactId" : "ApplicatonDeploy_6b2e066632f6447eb5694aaf8a300c57",
       "version" : "1.0"
@@ -361,6 +403,7 @@
     "properties" : [ {
       "propertyKey" : "configurationUrl",
       "propertyValue" : {
+
         "value" : "http://15.213.6.35:443/nexus/content/repositories/grenoble/projectDeploy.sh",
         "type" : "string"
       }
@@ -372,8 +415,10 @@
       }
     }, {
       "propertyKey" : "installPath",
+
       "propertyValue" : {
         "value" : null,
+
         "type" : "string"
       }
     }, {
@@ -382,6 +427,7 @@
         "value" : null,
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "_modifiable_properties",
       "propertyValue" : {
@@ -389,14 +435,17 @@
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "mysqlpassword",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "remoteFilePath",
       "propertyValue" : {
+
         "value" : "/tmp",
         "type" : "string"
       }
@@ -405,18 +454,24 @@
       "propertyValue" : {
         "value" : null,
         "type" : "string"
+
       }
     }, {
+
       "propertyKey" : "password",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
+
       }
     }, {
+
       "propertyKey" : "serviceCommand",
       "propertyValue" : {
         "value" : "sh projectDeploy.sh",
+
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
@@ -477,6 +532,7 @@
       "relationType" : "association",
       "id" : "fbcd9445-577b-08f1-a67c-8eb272c75d20",
       "properties" : [ {
+
         "propertyKey" : "_enable_modify_during_lifecycle_properties",
         "propertyValue" : {
           "value" : null,
@@ -485,6 +541,7 @@
       }, {
         "propertyKey" : "_modifiable_properties",
         "propertyValue" : {
+
           "value" : null,
           "type" : "string"
         }
@@ -492,15 +549,18 @@
         "propertyKey" : "_relation_type",
         "propertyValue" : {
           "value" : {
+
             "first" : "Association",
             "second" : "ASSOCIATION"
           },
           "type" : "pair"
+
         }
       } ],
       "relationDescriptorName" : "AppInstallson_ApplicatonDeploy_6b2e066632f6447eb5694aaf8a300c57__VERSION__1^0",
       "resourceReference" : {
         "name" : "Apache Tomcat Grenoble"
+
       }
     } ],
     "annotations" : {
@@ -516,6 +576,7 @@
     "id" : "912102d2-fbae-d03c-f5e3-2503a021532f",
     "name" : "Selenium Test Grenoble",
     "component" : {
+
       "@self" : "/csa/api/topology-model/component-type/bc8f71dd-7a0c-47e7-bbee-e57dd140521e",
       "groupId" : "com.hp.csa.type",
       "artifactId" : "SeleniumTestGrenoble_5b7c52f5a2674debb454589c51d85af3",
@@ -525,6 +586,7 @@
       "propertyKey" : "_enable_modify_during_lifecycle_properties",
       "propertyValue" : {
         "value" : null,
+
         "type" : "string"
       }
     }, {
@@ -535,6 +597,7 @@
       }
     }, {
       "propertyKey" : "AppHost",
+
       "propertyValue" : {
         "value" : null,
         "type" : "string"
@@ -574,12 +637,15 @@
       "propertyValue" : {
         "value" : "7785",
         "type" : "string"
+
       }
     } ],
+
     "outgoingRelations" : [ {
       "relationType" : "association",
       "id" : "744f3583-ffa3-b63d-eece-69c6aede6a44",
       "properties" : [ {
+
         "propertyKey" : "_enable_modify_during_lifecycle_properties",
         "propertyValue" : {
           "value" : null,
@@ -587,11 +653,14 @@
         }
       }, {
         "propertyKey" : "_modifiable_properties",
+
         "propertyValue" : {
           "value" : null,
+
           "type" : "string"
         }
       }, {
+
         "propertyKey" : "_relation_type",
         "propertyValue" : {
           "value" : {
@@ -601,19 +670,23 @@
           "type" : "pair"
         }
       } ],
+
       "relationDescriptorName" : "Tests_SeleniumTestGrenoble_5b7c52f5a2674debb454589c51d85af3__VERSION__1^0__GROUPID__com^hp^csa^type",
       "resourceReference" : {
         "name" : "Application Deploy Grenoble"
       }
     } ],
+
     "annotations" : {
       "uniqueName" : "SeleniumTestGren0001",
+
       "displayName" : "912102d2-fbae-d03c-f5e3-2503a021532f",
       "x" : "132",
       "y" : "80",
       "description" : null
     },
     "capabilityChars" : [ ],
+
     "requirements" : [ ]
   }, {
     "id" : "a2f14b00-c560-f793-783e-d31e6dbacca4",
@@ -627,6 +700,7 @@
     "properties" : [ {
       "propertyKey" : "Azure-vmSize",
       "propertyValue" : {
+
         "value" : "Basic_A1",
         "type" : "string"
       }
@@ -640,10 +714,13 @@
       "propertyKey" : "VC-cpuCount",
       "propertyValue" : {
         "value" : "1",
+
         "type" : "number"
       }
     }, {
+
       "propertyKey" : "VC-LIFECYCLE_PHASE",
+
       "propertyValue" : {
         "value" : "deploying",
         "type" : "string"
@@ -651,8 +728,10 @@
     }, {
       "propertyKey" : "VC-vmFolder",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "VC-vmTemplateReference",
@@ -687,7 +766,7 @@
     }, {
       "propertyKey" : "AWS-privateKey",
       "propertyValue" : {
-        "value" : "ENC(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)",
+        "value" : "ENC(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)",
         "type" : "string_encrypted"
       }
     }, {
@@ -700,12 +779,14 @@
       "propertyKey" : "Azure-vmAdminUserName",
       "propertyValue" : {
         "value" : "grenoble",
+
         "type" : "string"
       }
     }, {
       "propertyKey" : "VC-privateKey",
       "propertyValue" : {
         "value" : null,
+
         "type" : "string_encrypted"
       }
     }, {
@@ -718,8 +799,10 @@
       "propertyKey" : "VC-hostSystem",
       "propertyValue" : {
         "value" : null,
+
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "vmID",
       "propertyValue" : {
@@ -729,7 +812,7 @@
     }, {
       "propertyKey" : "VC-password",
       "propertyValue" : {
-        "value" : "ENC(YjOOF1AwN0EhPfefCxklmu+uIaMpnqkX)",
+        "value" : "ENC(1SmbHYzmObe1yT81t6BnlNOjhtL9w4Y/)",
         "type" : "string_encrypted"
       }
     }, {
@@ -747,6 +830,7 @@
     }, {
       "propertyKey" : "Azure-sku",
       "propertyValue" : {
+
         "value" : "14.04.4-LTS",
         "type" : "string"
       }
@@ -761,15 +845,21 @@
       "propertyValue" : {
         "value" : null,
         "type" : "string"
+
       }
+
     }, {
       "propertyKey" : "AWS-keyName",
+
       "propertyValue" : {
+
         "value" : "Grenoble",
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "VC-datacenterName",
+
       "propertyValue" : {
         "value" : "VGE - Data Center",
         "type" : "string"
@@ -785,6 +875,7 @@
       "propertyValue" : {
         "value" : "admin@123",
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "AWS-proxyUsername",
@@ -800,6 +891,7 @@
       }
     }, {
       "propertyKey" : "VC-memorySize",
+
       "propertyValue" : {
         "value" : "512",
         "type" : "number"
@@ -808,6 +900,7 @@
       "propertyKey" : "AWS-availabilityZone",
       "propertyValue" : {
         "value" : "us-west-2a",
+
         "type" : "string"
       }
     }, {
@@ -819,8 +912,9 @@
     }, {
       "propertyKey" : "AWS-subnetId",
       "propertyValue" : {
-        "value" : "ENC(DJ/51FvIuq8Z1BPaPz0Em8Ih5zlKWd0+)",
+        "value" : "ENC(fHgQsIwQK+rhmeNBoocOqcAkcoyw+6iC)",
         "type" : "string_encrypted"
+
       }
     }, {
       "propertyKey" : "VC-username",
@@ -840,12 +934,15 @@
         "value" : "passport@123",
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "Azure-publisher",
       "propertyValue" : {
         "value" : "Canonical",
+
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "Azure-osPlatform",
       "propertyValue" : {
@@ -853,6 +950,7 @@
         "type" : "string"
       }
     }, {
+
       "propertyKey" : "instanceId",
       "propertyValue" : {
         "value" : null,
@@ -862,6 +960,7 @@
       "propertyKey" : "Azure-resourceGroupName",
       "propertyValue" : {
         "value" : "Grenoble",
+
         "type" : "string"
       }
     }, {
@@ -879,11 +978,14 @@
     }, {
       "propertyKey" : "resourceGroupName",
       "propertyValue" : {
+
         "value" : null,
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "Azure-virtualNetworkName",
+
       "propertyValue" : {
         "value" : "grenoble-vnet",
         "type" : "string"
@@ -898,24 +1000,30 @@
       "propertyKey" : "Azure-networkSecurityGroupName",
       "propertyValue" : {
         "value" : "Grenoble-nsg",
+
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "Azure-vmName",
       "propertyValue" : {
         "value" : "Grenoble",
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "VC-vmResourcePool",
       "propertyValue" : {
         "value" : null,
         "type" : "string"
       }
+
     }, {
       "propertyKey" : "Azure-offer",
       "propertyValue" : {
+
         "value" : "UbuntuServer",
+
         "type" : "string"
       }
     }, {
@@ -923,6 +1031,7 @@
       "propertyValue" : {
         "value" : "default",
         "type" : "string"
+
       }
     }, {
       "propertyKey" : "VC-clusterName",
