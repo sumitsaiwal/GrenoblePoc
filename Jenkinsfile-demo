@@ -29,12 +29,10 @@ node {
     
   stage 'Bring up Container in AWS environment'
   sshagent (credentials: ['6ec9d230-c6a7-4a9f-b1a9-f038d4527ddd']) {
-    script
-    sh '''while [[ ${BUILD_NUMBER} -ne 0 ]]; do
-		ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker stop demo
-		ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker rm demo
-    done
-    '''
+    if (env.BUILD_NUMBER != 0) {
+            sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker stop demo'
+	    sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker rm demo'
+        }
     sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker pull sumitsaiwal/grenoble:docker-demo'
     sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker run -d --name demo -p 8080:8080 sumitsaiwal/grenoble:docker-demo'
     sh 'sleep 1m' 
