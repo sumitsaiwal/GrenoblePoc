@@ -29,7 +29,7 @@ node {
     
   stage ('Bring up Container in AWS environment'){
   sshagent (credentials: ['6ec9d230-c6a7-4a9f-b1a9-f038d4527ddd']) {
-    sh 'ssh -o StrictHostKeyChecking=no -l sumit ${Docker_Host_AWS} "docker run -d hello-world; docker stop $(docker ps -a -q); docker rm $(docker ps -a -q); docker pull sumitsaiwal/grenoble:docker-demo; docker run -d --name demo -p 8080:8080 sumitsaiwal/grenoble:docker-demo; sleep 1m; docker logs demo; sleep 10; docker logs demo;"'
+    sh 'ssh -o StrictHostKeyChecking=no sumit ${Docker_Host_AWS} pwd'
   }
   }
 }
