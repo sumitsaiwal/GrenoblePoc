@@ -25,9 +25,7 @@ node {
       pkg.push 'docker-demo'
   }
   
-  env.Script = 
-    
-  stage 'Bring up Container in AWS environment'
+  stage ('Bring up Container in AWS environment'){
   sshagent (credentials: ['6ec9d230-c6a7-4a9f-b1a9-f038d4527ddd']) {
     if (env.BUILD_NUMBER != 0) {
             sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker stop demo'
@@ -40,5 +38,5 @@ node {
     sh 'sleep 10'
     sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker logs demo'
   }
-  
+  }
 }
