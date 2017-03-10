@@ -27,10 +27,10 @@ node {
   
   env.Script = 
     
-  stage ('Bring up Container in AWS environment'){
+  stage 'Bring up Container in AWS environment'
   sshagent (credentials: ['6ec9d230-c6a7-4a9f-b1a9-f038d4527ddd']) {
     script
-    sh '''while [[ env.BUILD_NUMBER -ne 0 ]]; do
+    sh '''while [[ ${BUILD_NUMBER} -ne 0 ]]; do
 		ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker stop demo
 		ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker rm demo
     done
@@ -42,5 +42,5 @@ node {
     sh 'sleep 10'
     sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker logs demo'
   }
-  }
+  
 }
