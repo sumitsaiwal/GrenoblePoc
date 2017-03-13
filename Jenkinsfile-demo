@@ -31,7 +31,7 @@ node {
 	sh 'docker rm $(docker ps -a -q)'
 	sh 'docker pull sumitsaiwal/grenoble:docker-demo'
 	sh 'docker run -d --name demo -p 443:8080 sumitsaiwal/grenoble:docker-demo'
-	sh 'sleep 30m'
+	sh 'sleep 30'
 	sh 'docker logs demo'
 	sh 'sleep 10'
 	sh 'docker logs demo'
