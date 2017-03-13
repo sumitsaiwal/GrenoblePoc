@@ -25,6 +25,18 @@ node {
       pkg.push 'docker-demo'
   }
   
+  stage ('Bring up Container in Azure environment'){
+  	sh 'docker run -d hello-world'
+	sh 'docker stop $(docker ps -a -q)'
+	sh 'docker rm $(docker ps -a -q)'
+	sh 'docker pull sumitsaiwal/grenoble:docker-demo'
+	sh 'docker run -d --name demo -p 443:8080 sumitsaiwal/grenoble:docker-demo'
+	sh 'sleep 30m'
+	sh 'docker logs demo'
+	sh 'sleep 10'
+	sh 'docker logs demo'
+	}
+  
   stage ('Bring up Container in AWS environment'){
   sshagent (credentials: ['6ec9d230-c6a7-4a9f-b1a9-f038d4527ddd']) {
     if (env.BUILD_NUMBER != 0) {
