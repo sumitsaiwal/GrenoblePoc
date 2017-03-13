@@ -27,8 +27,8 @@ node {
   
   stage ('Bring up Container in Azure environment'){
   	sh 'docker run -d hello-world'
-	sh 'docker stop $(docker ps -a -q)'
-	sh 'docker rm $(docker ps -a -q)'
+	sh 'docker stop demo'
+	sh 'docker rm demo'
 	sh 'docker pull sumitsaiwal/grenoble:docker-demo'
 	sh 'docker run -d --name demo -p 443:8080 sumitsaiwal/grenoble:docker-demo'
 	sh 'sleep 30'
