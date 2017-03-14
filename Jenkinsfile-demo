@@ -55,7 +55,7 @@ node {
         sshagent (credentials: ['3736983f-2969-46ec-bda8-c7f160e3d82f']) {
             sh 'ssh -o StrictHostKeyChecking=no ${Swarm_Host_User_Azure}@${Swarm_Host_Azure} pwd'
             sh 'ssh -o StrictHostKeyChecking=no ${Swarm_Host_User_Azure}@${Swarm_Host_Azure} docker service rm website'
-            sh 'ssh -o StrictHostKeyChecking=no ${Swarm_Host_User_Azure}@${Swarm_Host_Azure} docker service create --name website --publish 80:8080 sumitsaiwal/grenoble:docker-demo'
+            sh 'ssh -o StrictHostKeyChecking=no ${Swarm_Host_User_Azure}@${Swarm_Host_Azure} docker service create --name website --publish 443:8080 sumitsaiwal/grenoble:docker-demo'
             sh 'sleep 30'
         }
     }
