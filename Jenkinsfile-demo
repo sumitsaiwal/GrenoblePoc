@@ -35,7 +35,16 @@ node {
 	sh 'sleep 10'
 	sh 'docker logs demo'
 	}
-  
+	
+  stage ('Bring up Container in Azure Swarm environment'){
+        sshagent (credentials: ['3736983f-2969-46ec-bda8-c7f160e3d82f']) {
+            sh 'ssh -o StrictHostKeyChecking=no ${Swarm_Host_User_Azure}@${Swarm_Host_Azure} pwd'
+            sh 'ssh -o StrictHostKeyChecking=no ${Swarm_Host_User_Azure}@${Swarm_Host_Azure} docker service rm website'
+            sh 'ssh -o StrictHostKeyChecking=no ${Swarm_Host_User_Azure}@${Swarm_Host_Azure} docker service create --name website --publish 443:8080 sumitsaiwal/grenoble:docker-demo'
+            sh 'sleep 30'
+        }
+    }
+    
   stage ('Bring up Container in AWS environment'){
   sshagent (credentials: ['6ec9d230-c6a7-4a9f-b1a9-f038d4527ddd']) {
     if (env.BUILD_NUMBER != 0) {
@@ -50,13 +59,4 @@ node {
     sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker logs demo'
   }
   }
-  
-  stage ('Bring up Container in Azure Swarm environment'){
-        sshagent (credentials: ['3736983f-2969-46ec-bda8-c7f160e3d82f']) {
-            sh 'ssh -o StrictHostKeyChecking=no ${Swarm_Host_User_Azure}@${Swarm_Host_Azure} pwd'
-            sh 'ssh -o StrictHostKeyChecking=no ${Swarm_Host_User_Azure}@${Swarm_Host_Azure} docker service rm website'
-            sh 'ssh -o StrictHostKeyChecking=no ${Swarm_Host_User_Azure}@${Swarm_Host_Azure} docker service create --name website --publish 443:8080 sumitsaiwal/grenoble:docker-demo'
-            sh 'sleep 30'
-        }
-    }
 }
