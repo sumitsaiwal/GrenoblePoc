@@ -44,7 +44,7 @@ node {
         }
     sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker pull sumitsaiwal/grenoble:docker-demo'
     sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker run -d --name demo -p 8080:8080 sumitsaiwal/grenoble:docker-demo'
-    sh 'sleep 1m' 
+    sh 'sleep 30' 
     sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker logs demo'
     sh 'sleep 10'
     sh 'ssh -o StrictHostKeyChecking=no ${Docker_Host_User_AWS}@${Docker_Host_AWS} docker logs demo'
