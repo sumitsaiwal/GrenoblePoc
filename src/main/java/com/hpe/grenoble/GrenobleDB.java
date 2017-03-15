@@ -22,7 +22,7 @@ public class GrenobleDB {
 	ArrayList<GrenobleDB> arr = new ArrayList<GrenobleDB>();
 	arr.add(new GrenobleDB(10, "joe","Uria",22));
 	arr.add(new GrenobleDB(11, "Albert","Einstein",22));
-	arr.add(new GrenobleDB(12, "Ola","K. Behrensmeyer",23));
+	arr.add(new GrenobleDB(12, "Today's Demo","K. Behrensmeyer",23));
 	arr.add(new GrenobleDB(13, "Blaise","Pascal",21));
 	arr.add(new GrenobleDB(14, "Caroline","Herschel",24));
 	arr.add(new GrenobleDB(15, "Cecilia","Payne",20));
